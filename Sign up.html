@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up</title>
+    <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+</style>
+    <body>
+  <div id="mySidenav" class="sidenav">
+    <img src="Image/logo_color.png" width"500px" height="50px">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="">Sign up</a>
+  <a href="Login.html">Login</a>
+  <a href="Contact.html">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</head>
+
+<body>
+<form action="action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="Image/logo_color.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+    
+    <label for="uemail"><b>Email</label>
+    <input type="text" placeholder="Enter Email" name="uemail" required>
+    
+    <label for="ucountry"><b>Country</b></label>
+    <input type="text" placeholder="Country" name="ucountry"required>
+    
+    <label for="ustate"><b>State</b></label>
+    <input type="text" placeholder="Enter your state"name="ustate"required>
+    
+    <label for="uzipcode"><b>Zipcode</b></label>
+    <input type="text" placeholder="Enter your zipcode" name="uzipcode" required>
+    
+    <label for="unum"><b>Number</label>
+    <input type="text" placeholder="Enter Mobile Number" name="unum" required>
+    
+    <label for"uname"><b>Bank Name </b></label>
+    <input type="text" placeholder="Enter Bank Name" name="uname" required>
+    
+    <label for="uaccnum"> <b>Account Number</b></label>
+    <input type="text" placeholder="Enter Bank Account Number" name="uaccnum" required> 
+    
+    <label for="bvn"><b>BVN</b></label>
+    <input type="text" placeholder="Enter your bank BVN" name="bvn" required>
+    
+    <label for="udc"><b>Debit card</b></label>
+    <input type="text" placeholder="Enter Debit Card Number" name="udc" required>
+    
+    <label for="cvv"><b>CVV</b></label>
+    <input type="text" placeholder="Enter Debit Card CVV"name="cvv" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="text" placeholder="Enter Password" name="psw" required>
+    
+    <center>
+      <button>
+       <input style="background-color:lightblue;" type="button" value="Sign Up" onclick="myInput('Dear User!')" />
+  <script>
+  function myFunction(){
+  alert("Thanks!");
+  }
+  function myInput(text){
+  alert(text   + "You are welcome to FastCash biz an activation code will be sent to your email to confirm your registration! " );
+  }
+  </script>
+</body>
+
+    <button type="submit" onclick="user()" class="next" id="input2"/name="form" onclick="myInput('Dear User!')">Register</button>
+    <script>
+    function myInput(text){
+     alert(text + "Thanks for  the registration an activation code will be sent to your email before 2hours to confirm your ID and registration!") 
+    }
+  </script>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">Email?</a></span>
+  </div>
+</form>
+<br> 
+<br>
+<a href="Login.html" class="button">Have an account</a>
+<style>
+.button {
+background-color: blue;
+border: none;
+color: white;
+font-family: bold;
+border-radius: 5px;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+outline: none;
+}
+</style>
+<a href="index.html" class="button">Home</a>
+<style>
+.example_b {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #60a3bc;
+padding: 10px;
+border-radius: 30px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+}
+.example_b:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+</style>
+<br>
+<br>
+<div>
+  
+</div>
+<style>
+<style>
+/* Bordered form */
+<form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+</body>
+
+</html>
